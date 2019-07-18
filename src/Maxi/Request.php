@@ -1,6 +1,7 @@
 <?php 
 namespace Maxi;
 class Request {
+    
     // private $getters = $_GET
     public static function isGet() {
         if($_SERVER['REQUEST_METHOD'] == "GET") return true;
