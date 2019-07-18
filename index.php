@@ -1,3 +1,3 @@
 <?php
-require "./Kernel.php";
+require "./kernel.php";
 boot();

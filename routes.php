@@ -14,27 +14,20 @@ Router::get("/", function ($req) {
     </html>
     
     ";
-});
+})->name('stanley');
 Router::get("/home/:id/:name", function ($req, $params) {
     // echo $req->get('name');
     echo "<pre>";
     print_r($params);
-});
+})->name('stanl');
 
-Router::post("/home", function ($req) {
-    echo $req->get('name');
-    
-});
-Router::get("/login", function ($req) {
-    echo $req->get('name');
-});
 Router::get("/login/:id", function ($req) {
     echo $req->get('name');
 });
 
 
 Router::get("/register", function ($req) {
-  //  echo $req->get('name');
+  
   
 
   return " 
@@ -46,4 +39,8 @@ Router::get("/register", function ($req) {
   </body>
   </html>
   ";
+})->name('kosi');
+
+Router::get("/display",function ($req){
+   dd($req->age);
 });

@@ -18,7 +18,7 @@ class Request {
             return "/";
         }else {
             $url = $_SERVER["PATH_INFO"] > 1 ? rtrim($_SERVER["PATH_INFO"], '/') : $_SERVER["PATH_INFO"] ;
-            echo $url;
+          //  echo $url;
         return $url;
         }
         
@@ -30,7 +30,7 @@ class Request {
 
     public function getAll() 
     {
-        return $_GET;
+      return $_GET;
     }
 
     public function postAll() 
