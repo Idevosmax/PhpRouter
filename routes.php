@@ -1,6 +1,5 @@
 <?php
 use Maxi\Router;
-use Maxi\Request;
 
 
 Router::get("/", function ($req) {
@@ -21,8 +20,8 @@ Router::get("/home/:id/:name", function ($req, $params) {
     print_r($params);
 })->name('stanl');
 
-Router::get("/login/:id", function ($req) {
-    echo $req->get('name');
+Router::get("/login/:id", function ($req, $params) {
+    dd($params);
 });
 
 
